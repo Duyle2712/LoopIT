@@ -1,0 +1,17 @@
+
+.img-header {
+    background: url(../img/recruiter/green-line.png) no-repeat;
+    width: 214.07px;
+    height: 53.33px;
+}
+.sizeh1 h2 {
+    width: 250px;
+    height: 60px;
+}
+#tableDichVuSapHetHan_paginate .page-item.active .page-link{
+    z-index:3;
+    color:#fff;
+    background-color: #28a745 !important;
+    border-color:#28a745 !important;
+}
+

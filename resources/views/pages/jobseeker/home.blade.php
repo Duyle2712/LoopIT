@@ -1,5 +1,4 @@
-@extends('layout.jobseeker.main')
-@section('content')
+@include('layout.jobseeker.header_home')
 
 <div class="clearfix"></div>
 
@@ -7,7 +6,7 @@
 <div class="container-fluid clear-left clear-right">
     <div class="main-banner">
         <div class="banner-image">
-            <img src="resources/img/banner2.jpg" alt="banner-image">
+            <img src="public/img/banner2.jpg" alt="banner-image">
         </div>
     </div>
     <div class="banner-content">
@@ -123,11 +122,12 @@
                 <span>Tuyển gấp</span>
                 </h2>
                 <div class="job-group">
+                    @for ($i = 0; $i < 6; $i++)
                     <div class="job pagi">
                         <div class="job-content">
                             <div class="job-logo">
                             <a href="#">
-                                <img src="resources/img/fpt-logo.png" class="job-logo-ima" alt="job-logo">
+                                <img src="public/img/fpt-logo.png" class="job-logo-ima" alt="job-logo">
                             </a>
                             </div>
                             <div class="job-desc">
@@ -156,173 +156,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="job pagi">
-                        <div class="job-content">
-                            <div class="job-logo">
-                                <a href="#">
-                                    <img src="resources/img/alipay-logo.png" class="job-logo-ima" alt="job-logo">
-                                </a>
-                            </div>
-                            <div class="job-desc">
-                                <div class="job-title">
-                                    <a href="#">Fullstack .NET Developer (Angular/React)</a>
-                                </div>
-                                <div class="job-company">
-                                    <a href="#">Orient Software</a> | <a href="#" class="job-address"><i class="fa fa-map-marker" aria-hidden="true"></i>Hà Nội</a>
-                                </div>
-                                <div class="job-inf">
-                                    <div class="job-main-skill">
-                                        <i class="fa fa-code" aria-hidden="true"></i>  <a href="#"> .NET</a>
-                                    </div>
-                                    <div class="job-salary">
-                                        <i class="fa fa-money" aria-hidden="true"></i>
-                                        <span class="salary-min">15<em class="salary-unit">triệu</em></span>
-                                        <span class="salary-max">35 <em class="salary-unit">triệu</em></span>
-                                    </div>
-                                    <div class="job-deadline">
-                                        <span><i class="fa fa-clock-o" aria-hidden="true"></i>  Hạn nộp: <strong>31/02/2020</strong></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-btn-appl">
-                                <a href="#" class="btn btn-appl">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job pagi">
-                        <div class="job-content">
-                            <div class="job-logo">
-                                <a href="#">
-                                    <img src="resources/img/nvg-logo.png" class="job-logo-ima" alt="job-logo">
-                                </a>
-                            </div>
-                            <div class="job-desc">
-                                <div class="job-title">
-                                    <a href="#">Frontend Developer (JavaScript, ReactJS)</a>
-                                </div>
-                                <div class="job-company">
-                                    <a href="#">mgm technology</a> | <a href="#" class="job-address"><i class="fa fa-map-marker" aria-hidden="true"></i>Đà Nẵng</a>
-                                </div>
-                                <div class="job-inf">
-                                    <div class="job-main-skill">
-                                        <i class="fa fa-code" aria-hidden="true"></i>  <a href="#"> JavaScript, ReactJS</a>
-                                    </div>
-                                    <div class="job-salary">
-                                        <i class="fa fa-money" aria-hidden="true"></i>
-                                        <span class="salary-min">15<em class="salary-unit">triệu</em></span>
-                                        <span class="salary-max">35 <em class="salary-unit">triệu</em></span>
-                                    </div>
-                                    <div class="job-deadline">
-                                        <span><i class="fa fa-clock-o" aria-hidden="true"></i>  Hạn nộp: <strong>31/12/2019</strong></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-btn-appl">
-                                <a href="#" class="btn btn-appl">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job pagi">
-                        <div class="job-content">
-                            <div class="job-logo">
-                                <a href="#">
-                                    <img src="resources/img/luxoft-vietnam-logo.png" class="job-logo-ima" alt="job-logo">
-                                </a>
-                            </div>
-                            <div class="job-desc">
-                                <div class="job-title">
-                                    <a href="#">IVI System Test Engineer</a>
-                                </div>
-                                <div class="job-company">
-                                    <a href="#">NVG TECHNOLOGY</a> | <a href="#" class="job-address"><i class="fa fa-map-marker" aria-hidden="true"></i>Đà Nẵng</a>
-                                </div>
-
-                                <div class="job-inf">
-                                    <div class="job-main-skill">
-                                        <i class="fa fa-code" aria-hidden="true"></i>  <a href="#"> Javascript</a>
-                                    </div>
-                                    <div class="job-salary">
-                                        <i class="fa fa-money" aria-hidden="true"></i>
-                                        <span class="salary-min">15<em class="salary-unit">triệu</em></span>
-                                        <span class="salary-max">35 <em class="salary-unit">triệu</em></span>
-                                    </div>
-                                    <div class="job-deadline">
-                                        <span><i class="fa fa-clock-o" aria-hidden="true"></i>  Hạn nộp: <strong>31/12/2019</strong></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-btn-appl">
-                                <a href="#" class="btn btn-appl">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job pagi">
-                        <div class="job-content">
-                            <div class="job-logo">
-                                <a href="#">
-                                    <img src="resources/img/fpt-logo.png" class="job-logo-ima" alt="job-logo">
-                                </a>
-                            </div>
-                            <div class="job-desc">
-                                <div class="job-title">
-                                    <a href="#">[HCM] 02 Solution Architects–Up to $2000</a>
-                                </div>
-                                <div class="job-company">
-                                    <a href="#">Fpt Software</a> | <a href="#" class="job-address"><i class="fa fa-map-marker" aria-hidden="true"></i>Đà Nẵng</a>
-                                </div>
-                                <div class="job-inf">
-                                    <div class="job-main-skill">
-                                        <i class="fa fa-code" aria-hidden="true"></i>  <a href="#"> Java</a>
-                                    </div>
-                                    <div class="job-salary">
-                                        <i class="fa fa-money" aria-hidden="true"></i>
-                                        <span class="salary-min">15<em class="salary-unit">triệu</em></span>
-                                        <span class="salary-max">35 <em class="salary-unit">triệu</em></span>
-                                    </div>
-                                    <div class="job-deadline">
-                                        <span><i class="fa fa-clock-o" aria-hidden="true"></i>  Hạn nộp: <strong>31/12/2019</strong></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-btn-appl">
-                                <a href="#" class="btn btn-appl">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job pagi">
-                        <div class="job-content">
-                            <div class="job-logo">
-                                <a href="#">
-                                    <img src="resources/img/fpt-logo.png" class="job-logo-ima" alt="job-logo">
-                                </a>
-                            </div>
-                            <div class="job-desc">
-                                <div class="job-title">
-                                    <a href="#">[HCM] 02 Solution Architects–Up to $2000</a>
-                                </div>
-                                <div class="job-company">
-                                    <a href="#">Fpt Software</a> | <a href="#" class="job-address"><i class="fa fa-map-marker" aria-hidden="true"></i>Đà Nẵng</a>
-                                </div>
-
-                                <div class="job-inf">
-                                    <div class="job-main-skill">
-                                        <i class="fa fa-code" aria-hidden="true"></i>  <a href="#"> Java</a>
-                                    </div>
-                                    <div class="job-salary">
-                                        <i class="fa fa-money" aria-hidden="true"></i>
-                                        <span class="salary-min">15<em class="salary-unit">triệu</em></span>
-                                        <span class="salary-max">35 <em class="salary-unit">triệu</em></span>
-                                    </div>
-                                    <div class="job-deadline">
-                                        <span><i class="fa fa-clock-o" aria-hidden="true"></i>  Hạn nộp: <strong>31/12/2019</strong></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap-btn-appl">
-                                <a href="#" class="btn btn-appl">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endfor
                     <div class="readmorestyle-wrap">
                     <a href="#" class="readallstyle reads1">Xem tất cả</a>
                     </div>
@@ -434,7 +268,7 @@
             </div>
             <div class="job-sidebar">
                 <div class="sb-banner">
-                    <img src="resources/img/ads.jpg" class="advertisement">
+                    <img src="public/img/ads.jpg" class="advertisement">
                 </div>
             </div>
         </div>
@@ -455,10 +289,11 @@
             </div>
             <div class="col-md-12 job-board2-wrap">
                 <div class="owl-carousel owl-theme job-board2-contain">
+                    @for ($i = 0; $i < 16; $i++)
                     <div class="item job-latest-item">
                         <a href="#" class="job-latest-group">
                             <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
+                                <img src="public/img/fpt-logo.png">
                             </div>
                             <div class="job-lt-info">
                                 <h3>[HCM] 02 Solution Architects–Up to $2000 #1</h3>
@@ -467,224 +302,45 @@
                             </div>
                         </a>
                     </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/alipay-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>Fullstack .NET Developer (Angular/React) #2</h3>
-                                <a class="company" href="#">Orient Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/nvg-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>Frontend Developer (JavaScript, ReactJS)</h3>
-                                <a class="company" href="#">mgm technology</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/luxoft-vietnam-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>IVI System Test Engineer</h3>
-                                <a class="company" href="#">LUXOFT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item job-latest-item">
-                        <a href="#" class="job-latest-group">
-                            <div class="job-lt-logo">
-                                <img src="resources/img/fpt-logo.png">
-                            </div>
-                            <div class="job-lt-info">
-                                <h3>[HCM] 02 Solution Architects–Up to $2000</h3>
-                                <a class="company" href="#">FPT Software</a>
-                                <p class="address" ><i class="fa fa-map-marker pr-1" aria-hidden="true"></i> Đà Nẵng</p>
-                            </div>
-                        </a>
-                    </div>
+                    @endfor
                 </div>
             </div>
         </div>
     </div>
 </div>
 <script>
-$(document).ready(function() {
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:2,
-                nav:true,
-                slideBy: 2,
-                dots: false
-            },
-            600:{
-                items:4,
-                nav:false,
-                slideBy: 2,
-                dots: false
-            },
-            1000:{
-                items: 6,
-                nav:true,
-                loop:false,
-                slideBy: 2
+    $(document).ready(function() {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:2,
+                    nav:true,
+                    slideBy: 2,
+                    dots: false
+                },
+                600:{
+                    items:4,
+                    nav:false,
+                    slideBy: 2,
+                    dots: false
+                },
+                1000:{
+                    items: 6,
+                    nav:true,
+                    loop:false,
+                    slideBy: 2
+                }
             }
-        }
-    });
-})
+        });
+    })
 </script>
 <!-- (end) job board v2 -->
 
@@ -699,86 +355,18 @@ $(document).ready(function() {
                     <h3>Nhà tuyển dùng hàng đầu</h3>
                 </div>
                 <div class="row">
+                    @for ($i=0; $i < 8; $i++)
                     <div class="col-md-3 col-sm-6 col-12 top-employer-wrap">
                         <div class="top-employer-item">
                             <a href="#">
                                 <div class="emp-img-thumb">
-                                    <img src="resources/img/fpt-logo.png">
+                                    <img src="public/img/fpt-logo.png">
                                 </div>
                                 <h3 class="company">FPT Software</h3>
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-12 top-employer-wrap">
-                        <div class="top-employer-item">
-                            <a href="#">
-                                <div class="emp-img-thumb">
-                                    <img src="resources/img/nvg-logo.png">
-                                </div>
-                                <h3 class="company">mgm technology</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12 top-employer-wrap">
-                        <div class="top-employer-item">
-                            <a href="#">
-                                <div class="emp-img-thumb">
-                                    <img src="resources/img/alipay-logo.png">
-                                </div>
-                                <h3 class="company">ALIPAY Software</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12 top-employer-wrap">
-                        <div class="top-employer-item">
-                            <a href="#">
-                                <div class="emp-img-thumb">
-                                    <img src="resources/img/luxoft-vietnam-logo.png">
-                                </div>
-                                <h3 class="company">Luxoft Software</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12 top-employer-wrap">
-                        <div class="top-employer-item">
-                            <a href="#">
-                                <div class="emp-img-thumb">
-                                    <img src="resources/img/techcombank-logo.png">
-                                </div>
-                                <h3 class="company">Techcombank</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12 top-employer-wrap">
-                        <div class="top-employer-item">
-                            <a href="#">
-                                <div class="emp-img-thumb">
-                                    <img src="resources/img/home-credit.png">
-                                </div>
-                                <h3 class="company">Home Credit</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12 top-employer-wrap">
-                        <div class="top-employer-item">
-                            <a href="#">
-                                <div class="emp-img-thumb">
-                                    <img src="resources/img/grab-vietnam.png">
-                                </div>
-                                <h3 class="company">Grab (Vietnam) Ltd.</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12 top-employer-wrap">
-                        <div class="top-employer-item">
-                            <a href="#">
-                                <div class="emp-img-thumb">
-                                    <img src="resources/img/HINH.png">
-                                </div>
-                                <h3 class="company">Techbase Vietnam</h3>
-                            </a>
-                        </div>
-                    </div>
+                    @endfor
                 </div>
             </div>
         </div>
@@ -798,11 +386,12 @@ $(document).ready(function() {
             </div>
         </div>
         <div class="row job-best-salary-inner">
+            @for ($i=0; $i<16; $i++)
             <div class="col-md-6 job-over-item">
                 <div class="job-inner-over-item">
                     <a href="#wrap">
                         <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
+                            <img src="public/img/fitech-logo.jpg" alt="company logo image">
                         </div>
                         <div class="content">
                             <div class="job-name">
@@ -819,321 +408,7 @@ $(document).ready(function() {
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/hdbank-logo.png" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                Java Developer (.NET, PL/SQL)
-                            </div>
-                            <a href="#company" class="company">
-                                HD Bank
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>15 - 35 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hồ Chí Minh</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/SCS_Logo_original.png" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                Senior .NET Developers
-                            </div>
-                            <a href="#company" class="company">
-                                SCS Solution
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>20 - 40 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fpt-logo.png" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                Senior .NET Dev – Signing bonus upto 30M
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>35 - 70 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/novaon-digital-group-logo.png" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET Developer (C#, ASP.NET) Up to $1200
-                            </div>
-                            <a href="#company" class="company">
-                                NOVAON
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                    <a href="#wrap">
-                        <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                        </div>
-                        <div class="content">
-                            <div class="job-name">
-                                .NET/C# developers ($1,000-$1,500 net)
-                            </div>
-                            <a href="#company" class="company">
-                                Fitech
-                            </a>
-                        </div>
-                        <div class="extra-info">
-                            <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                            <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            @endfor
         </div>
     </div>
 </div>
@@ -1146,7 +421,7 @@ $(document).ready(function() {
             <div class="col-md-12">
                 <div class="ads-above">
                     <a href="#">
-                        <img src="{{ URL::asset('resources/img/hna.jpg') }}">
+                        <img src="public/img/hna.jpg">
                     </a>
                 </div>
             </div>
@@ -1163,11 +438,12 @@ $(document).ready(function() {
             </div>
         </div>
         <div class="row job-best-salary-inner">
+            @for ($i=0; $i<16; $i++)
             <div class="col-md-6 job-over-item">
                 <div class="job-inner-over-item">
                     <a href="#wrap">
                         <div class="thumbnail">
-                            <img src="resources/img/fitech-logo.jpg" alt="company logo image">
+                            <img src="public/img/fitech-logo.jpg" alt="company logo image">
                         </div>
                         <div class="content">
                             <div class="job-name">
@@ -1184,321 +460,7 @@ $(document).ready(function() {
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/hdbank-logo.png" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    Java Developer (.NET, PL/SQL)
-                    </div>
-                    <a href="#company" class="company">
-                    HD Bank
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>15 - 35 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hồ Chí Minh</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/SCS_Logo_original.png" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    Senior .NET Developers
-                    </div>
-                    <a href="#company" class="company">
-                    SCS Solution
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>20 - 40 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fpt-logo.png" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    Senior .NET Dev – Signing bonus upto 30M
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>35 - 70 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/novaon-digital-group-logo.png" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET Developer (C#, ASP.NET) Up to $1200
-                    </div>
-                    <a href="#company" class="company">
-                    NOVAON
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-6 job-over-item">
-                <div class="job-inner-over-item">
-                <a href="#wrap">
-                <div class="thumbnail">
-                    <img src="resources/img/fitech-logo.jpg" alt="company logo image">
-                </div>
-                <div class="content">
-                    <div class="job-name">
-                    .NET/C# developers ($1,000-$1,500 net)
-                    </div>
-                    <a href="#company" class="company">
-                    Fitech
-                    </a>
-                </div>
-                <div class="extra-info">
-                    <p class="salary mt-2"><i class="fa fa-money pr-2"></i>10 - 20 triệu</p>
-                    <p class="place"><i class="fa fa-map-marker pr-2"></i>Hà Nội</p>
-                </div>
-                </a>
-                </div>
-            </div>
+            @endfor
         </div>
     </div>
 </div>
@@ -1510,7 +472,7 @@ $(document).ready(function() {
             <div class="col-md-12">
                 <div class="ads-above">
                     <a href="#">
-                        <img src="{{ URL::asset('resources/img/hna2.jpg') }}">
+                        <img src="public/img/hna2.jpg">
                     </a>
                 </div>
             </div>
@@ -1530,7 +492,7 @@ $(document).ready(function() {
             <div class="col-md-4 col-sm-12 col-12 news-item">
                 <div class="news-item-inner">
                     <a href="#wrap">
-                        <div class="news-thumb" style="background-image: url(resources/img/news1.jpg);"></div>
+                        <div class="news-thumb" style="background-image: url(public/img/news1.jpg);"></div>
                     </a>
                     <div class="news-details">
                         <div class="tags">
@@ -1550,7 +512,7 @@ $(document).ready(function() {
             <div class="col-md-4 col-sm-12 col-12 news-item">
                 <div class="news-item-inner">
                     <a href="#wrap">
-                        <div class="news-thumb" style="background-image: url(resources/img/news2.jpg);"></div>
+                        <div class="news-thumb" style="background-image: url(public/img/news2.jpg);"></div>
                     </a>
                     <div class="news-details">
                         <div class="tags">
@@ -1570,7 +532,7 @@ $(document).ready(function() {
             <div class="col-md-4 col-sm-12 col-12 news-item">
                 <div class="news-item-inner">
                     <a href="#wrap">
-                        <div class="news-thumb" style="background-image: url(resources/img/news3.png);"></div>
+                        <div class="news-thumb" style="background-image: url(public/img/news3.png);"></div>
                     </a>
                     <div class="news-details">
                         <div class="tags">
@@ -1591,6 +553,7 @@ $(document).ready(function() {
     </div>
 </div>
 <!-- (end) news -->
-@endsection
+
+@include('layout.jobseeker.footer')
 
 

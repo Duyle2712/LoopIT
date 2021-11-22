@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class RecruiterController extends Controller
 {
-    function  getRecruiterHome()
+    function  index()
     {
         return view('pages.recruiter.home');       
     }
@@ -15,4 +15,6 @@ class RecruiterController extends Controller
     {
         return view('pages.recruiter.job_posting'); 
     }
+
+    
 }

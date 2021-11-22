@@ -8,7 +8,7 @@
       <div class="col-md-12">
         <div class="ads-above">
           <a href="#">
-            <img src="{{ URL::asset('resources/img/hna2.jpg') }}">
+            <img src="{{ URL::asset('public/img/hna2.jpg') }}">
           </a>
         </div>
       </div>
@@ -122,7 +122,7 @@
                         <option value="4">4 năm</option>
                         <option value="5">5 năm</option>
                         <option value="6">Trên 5 năm</option>
-                        <option value="8">Không yêu cầu kinh nghiệm</option>  
+                        <option value="8">Không yêu cầu kinh nghiệm</option>
                       </select>
                     </div>
                   </div>
@@ -246,71 +246,8 @@
                     <label class="col-sm-3 col-form-label text-right label">Nơi làm việc</label>
                     <div class="col-sm-9">
                       <select type="text" class="form-control" id="jobProvince">
-                        <option value="1">Hồ Chí Minh</option>
-                        <option value="2">Hà Nội</option>
-                        <option value="3">An Giang</option>
-                        <option value="4">Bạc Liêu</option>
-                        <option value="5">Bà Rịa-Vũng Tàu</option>
-                        <option value="6">Bắc Cạn</option>
-                        <option value="7">Bắc Giang</option>
-                        <option value="8">Bắc Ninh</option>
-                        <option value="9">Bến Tre</option>
-                        <option value="10">Bình Dương</option>
-                        <option value="11">Bình Định</option>
-                        <option value="12">Bình Phước</option>
-                        <option value="13">Bình Thuận</option>
-                        <option value="14">Cao Bằng</option>
-                        <option value="15">Cà Mau</option>
-                        <option value="16">Cần Thơ</option>
-                        <option value="17">Đà Nẵng</option>
-                        <option value="18">Đắk Lắk</option>
-                        <option value="19">Đắk Nông</option>
-                        <option value="20">Điện Biên</option>
-                        <option value="21">Đồng Nai</option>
-                        <option value="22">Đồng Tháp</option>
-                        <option value="23">Gia Lai</option>
-                        <option value="24">Hà Giang</option>
-                        <option value="25">Hà Nam</option>
-                        <option value="27">Hà Tĩnh</option>
-                        <option value="28">Hải Dương</option>
-                        <option value="29">Hải Phòng</option>
-                        <option value="30">Hậu Giang</option>
-                        <option value="31">Hòa Bình</option>
-                        <option value="32">Hưng Yên</option>
-                        <option value="33">Khánh Hòa</option>
-                        <option value="34">Kiên Giang</option>
-                        <option value="35">Kon Tum</option>
-                        <option value="36">Lai Châu</option>
-                        <option value="37">Lạng Sơn</option>
-                        <option value="38">Lào Cai</option>
-                        <option value="39">Lâm Đồng</option>
-                        <option value="40">Long An</option>
-                        <option value="41">Nam Định</option>
-                        <option value="42">Nghệ An</option>
-                        <option value="43">Ninh Bình</option>
-                        <option value="44">Ninh Thuận</option>
-                        <option value="45">Phú Thọ</option>
-                        <option value="46">Phú Yên</option>
-                        <option value="47">Quảng Bình</option>
-                        <option value="48">Quảng Nam</option>
-                        <option value="49">Quảng Ngãi</option>
-                        <option value="50">Quảng Ninh</option>
-                        <option value="51">Quảng Trị</option>
-                        <option value="52">Sóc Trăng</option>
-                        <option value="53">Sơn La</option>
-                        <option value="54">Tây Ninh</option>
-                        <option value="55">Thái Bình</option>
-                        <option value="56">Thái Nguyên</option>
-                        <option value="57">Thanh Hóa</option>
-                        <option value="58">Thừa Thiên-Huế</option>
-                        <option value="59">Tiền Giang</option>
-                        <option value="60">Trà Vinh</option>
-                        <option value="61">Tuyên Quang</option>
-                        <option value="62">Vĩnh Long</option>
-                        <option value="63">Vĩnh Phúc</option>
-                        <option value="64">Yên Bái</option>
-                        <option value="65">Toàn quốc</option>
-                        <option value="66">Nước ngoài</option>
+                      <option value="none">Tỉnh/Thành Phố</option>
+                        @include('layout.recruiter.city')
                       </select>
                     </div>
                   </div>
@@ -832,14 +769,14 @@
                     <label class="col-sm-3 col-form-label text-right label">Logo</label>
                     <div class="col-sm-9 " >
                       <div id="drop-area">
-                  
+
                           <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
                           <label style="cursor: pointer;" for="fileElem">Tải ảnh lên hoặc kéo thả vào đây</label>
                           <progress id="progress-bar" max=100 value=0 class="d-none"></progress>
                            <div id="gallery"></div>
-                       
+
                       </div>
-                      
+
                     </div>
                   </div>
                   <div class="form-group row">
@@ -858,146 +795,12 @@
             </button>
           </div>
         </form>
-        
       </div>
-      <!-- Side bar -->
-      <div class="col-md-4 col-sm-12 col-12">
-        <div class="recuiter-info">
-          <div class="recuiter-info-avt">
-            <img src="{{ URL::asset('resources/img/icon_avatar.jpg') }}">
-          </div>
-          <div class="clearfix list-rec">
-            <h4>NESTLE Inc.</h4>
-            <ul>
-              <li><a href="#">Việc làm đang đăng <strong>(0)</strong></a></li>
-              <li><a href="#">Follower <strong>(450)</strong></a></li>
-            </ul>
-          </div>
-        </div>
 
+        <!-- Side bar -->
+        @include('layout.recruiter.sidebar')
+        <!-- End Side bar -->
 
-        <div class="block-sidebar" style="margin-bottom: 20px;">
-   <header>
-      <h3 class="title-sidebar font-roboto bg-primary">
-         Trung tâm quản lý
-      </h3>
-   </header>
-   <div class="content-sidebar menu-trung-tam-ql menu-ql-employer">
-      <h3 class="menu-ql-ntv">
-         Quản lý tài khoản
-      </h3>
-      <ul>
-         <li>
-            <a href="#">
-            Tài khoản
-            </a>
-         </li>
-         <li>
-            <a href="#">
-            Giấy phép kinh doanh
-            </a>
-         </li>
-      </ul>
-      <h3 class="menu-ql-ntv">
-         Quản lý dịch vụ
-      </h3>
-      <ul>
-         <li>
-            <a href="#">
-            Lịch sử dịch vụ
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_blank">
-            Báo giá
-            </a>
-         </li>
-      </ul>
-      <h3 class="menu-ql-ntv">
-         Quản lý tin tuyển dụng
-      </h3>
-      <ul>
-         <li>
-            <a href="#">
-            Đăng tin tuyển dụng
-            </a>
-         </li>
-         <li>
-            <a href="#">
-            Danh sách tin tuyển dụng
-            </a>
-         </li>
-      </ul>
-      <h3 class="menu-ql-ntv">
-         Quản lý ứng viên
-      </h3>
-      <ul>
-         <li>
-            <a href="#">
-            Tìm kiếm hồ sơ
-            </a>
-         </li>
-         <li>
-            <a href="#">
-            Hồ sơ đã lưu
-            </a>
-         </li>
-         <li>
-            <a href="#">
-            Hồ sơ đã ứng tuyển
-            </a>
-         </li>
-         <li>
-            <a href="#" title="Thông báo hồ sơ phù hợp">
-            Thông báo hồ sơ phù hợp
-            </a>
-         </li>
-      </ul>
-      <h3 class="menu-ql-ntv">
-         Hỗ trợ và thông báo
-      </h3>
-      <ul>
-         <li>
-            <a href="#" title="Gửi yêu cầu đến ban quản trị">
-            Gửi yêu cầu đến ban quản trị
-            </a>
-         </li>
-         <li>
-            <a href="#" title="Ban quản trị thông báo">
-            Ban quản trị thông báo
-            </a>
-         </li>
-         <li>
-            <a href="#" title="Hướng dẫn thao tác">
-            Hướng dẫn thao tác
-            </a>
-         </li>
-         <li>
-            <a href="#" target="_blank">
-            <span>Thông tin thanh toán</span>
-            </a>
-         </li>
-         <li>
-            <a target="_blank" href="#">
-            <span>Cổng tra cứu lương</span>
-            </a>
-         </li>
-         <li>
-            <a target="_blank" href="#">
-            <span> Cẩm nang tuyển dụng</span>
-            </a>
-         </li>
-      </ul>
-      <ul>
-         <li class="logout">
-            <a href="#" title="Đăng xuất">
-            Đăng xuất
-            </a>
-         </li>
-      </ul>
-   </div>
-</div>
-      </div>
     </div>
   </div>
 </div>
@@ -1045,4 +848,3 @@
 
 
 
-    

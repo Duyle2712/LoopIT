@@ -11,6 +11,10 @@ class MainController extends Controller
         return view('pages/jobseeker/home');
     }
 
+    function getDashboard(){
+        return view('pages/jobseeker/js_dashboard');
+    }
+
     function getProfile_js(){
         return view('pages/jobseeker/js_profile');
     }
@@ -21,5 +25,21 @@ class MainController extends Controller
 
     function getJob_detail(){
         return view('pages/jobseeker/job_detail');
+    }
+
+    function getJob_manage(){
+        return view('pages/jobseeker/js_jobmanage');
+    }
+
+    function getJob_noti(){
+        return view('pages/jobseeker/js_notijob');
+    }
+
+    function getRec_see(){
+        return view('pages/jobseeker/js_recruitersee');
+    }
+
+    function getSearch(){
+        return view('pages/jobseeker/job_search');
     }
 }

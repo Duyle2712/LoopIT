@@ -17,7 +17,7 @@
           </li>
           <li>
             <a href="#">
-              <i class="fa fa-envelope fticn"></i> 
+              <i class="fa fa-envelope fticn"></i>
               hello@123.com
             </a>
           </li>
@@ -94,18 +94,45 @@
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="{{ URL::asset('resources/js/jquery-3.4.1.slim.min.js') }}"></script>
-    <script src="{{ URL::asset('resources/js/popper.min.js') }}"></script>
-    <script src="{{ URL::asset('resources/js/bootstrap.min.js') }}"></script>
-    <script src="{{ URL::asset('resources/js/select2.min.js') }}"></script>
-    <script src="{{ URL::asset('resources/js/jobdata.js') }}"></script>
+    <script src="{{ URL::asset('public/js/jquery-3.4.1.slim.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/popper.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/select2.min.js') }}"></script>
+    <script src="{{ URL::asset('public/js/jobdata.js') }}"></script>
 
-    <script type="text/javascript" src="{{ URL::asset('resources/js/main.js') }}"></script> 
+    <script type="text/javascript" src="{{ URL::asset('public/js/main.js') }}"></script>
     <!-- Owl Stylesheets Javascript -->
-    <script src="{{ URL::asset('resources/js/owlcarousel/owl.carousel.js') }}"></script>
+    <script src="{{ URL::asset('public/js/owlcarousel/owl.carousel.js') }}"></script>
     <!-- Read More Plugin -->
 
-   
+
+  <!-- Page level plugins -->
+  <script src="{{ URL::asset('public/vendor/datatables/jquery.dataTables.min.js') }}"></script>
+  <script src="{{ URL::asset('public/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#tableDichVuSapHetHan').DataTable( {
+
+        // "language": {
+        //   "paginate": {
+        //     "previous": '<i class="fa fa-chevron-left"></i>',
+        //     "next": '<i class="fa fa-chevron-right"></i>'
+        //   }
+        // },
+        "oLanguage": {
+          // "sLengthMenu": "Display _MENU_ records per page",
+          // "sZeroRecords": "Nothing found - sorry",
+          // "sInfo": "Showing _START_ to _END_ of _TOTAL_ records",
+          // "sInfoEmpty": "Showing 0 to 0 of 0 records",
+          // "sInfoFiltered": "(filtered from _MAX_ total records)"
+        }
+      });
+    });
+  </script>
+
+
+
 
 </body>
 </html>
